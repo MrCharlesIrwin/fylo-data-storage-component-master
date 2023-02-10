@@ -38,16 +38,28 @@
   height: 70%;
   margin-left: 5%;
 }
-.wrapper div img:first-child {
+
+.figure:first-child {
   grid-column-start: 1;
   grid-column-end: 4;
 }
+.figure {
+  background-color: hsl(229, 57%, 11%);
+}
 .sliderBox {
+  height: 18vh;
   width: 50%;
   border-radius: 15px;
   position: relative;
+  display: flex;
+    align-items: center;
+justify-content: center;
 }
+.sliderBox > div {
+  height: 50%;
+  width: 85%;
 
+}
 .sliderBox div div:first-of-type {
   background-color: red;
   position: absolute;
@@ -59,7 +71,8 @@
 }
 .sliderContainer {
   width: 100%;
-  background-color: red;
+  background-color: orange;
+  margin-bottom: 2%;
 }
 .slider {
   -webkit-appearance: none;
