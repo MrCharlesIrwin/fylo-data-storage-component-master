@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+* {
+  font-size: 14px;
+  border: 1px solid black;
+  font-family: "Raleway";
+  color: hsl(243, 100%, 93%);
+  border-color: green;
+}
+
+.main {
+  background-image: url(images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  background-color: hsl(229, 57%, 11%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+.main > section {
+  background-color: hsl(228, 56%, 26%);
+}
+.wrapper {
+  border-radius: 5px 70px 5px 5px;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  height: 18vh;
+  width: 30%;
+}
+
+.wrapper div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 50%;
+  height: 70%;
+  margin-left: 5%;
+}
+.wrapper div img:first-child {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.sliderBox {
+  width: 50%;
+  border-radius: 15px;
+  position: relative;
+}
+
+.sliderBox div div:first-of-type {
+  background-color: red;
+  position: absolute;
+  top: -5vh;
+  left: 35vw;
+  height: 10vh;
+  width: 15vw;
+  text-align: center;
+}
+.sliderContainer {
+  width: 100%;
+  background-color: red;
+}
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 90%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.8;
+  -webkit-transition: 0.1s;
+  transition: opacity 0.1s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.sliderBox div div:last-child {
+  display: flex;
+  justify-content: space-between;
+}
