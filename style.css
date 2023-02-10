@@ -8,6 +8,9 @@
   border-color: green;
 }
 
+body {
+  margin: 0;
+}
 .main {
   background-image: url(images/bg-desktop.png);
   background-repeat: no-repeat;
@@ -42,6 +45,7 @@
 .figure:first-child {
   grid-column-start: 1;
   grid-column-end: 4;
+  
 }
 .figure {
   background-color: hsl(229, 57%, 11%);
@@ -52,16 +56,16 @@
   border-radius: 15px;
   position: relative;
   display: flex;
-    align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .sliderBox > div {
   height: 50%;
   width: 85%;
-
 }
-.sliderBox div div:first-of-type {
-  background-color: red;
+.s-box {
+  background-color: white;
+  color: red;
   position: absolute;
   top: -5vh;
   left: 35vw;
@@ -69,16 +73,25 @@ justify-content: center;
   width: 15vw;
   text-align: center;
 }
+.s-box p {
+  color: black;
+}
+.s-box span {
+  color: inherit;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
 .sliderContainer {
   width: 100%;
   background-color: orange;
   margin-bottom: 2%;
 }
 .slider {
+  border-radius: 1rem;
   -webkit-appearance: none;
   appearance: none;
-  width: 90%;
-  height: 25px;
+  width: 100%;
+  height: 18px;
   background: #d3d3d3;
   outline: none;
   opacity: 0.8;
