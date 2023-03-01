@@ -163,3 +163,44 @@ body {
   font-weight: 600;
   color: #e6dddd;
 }
+@media only screen and (max-width: 375px) {
+  * {
+    font-size: .9rem;
+  }
+ .main {
+  background-image: url(images/bg-mobile.png);
+  background-size: cover;
+  overflow-x: hidden;
+ flex-direction: column;
+ gap: 3%;
+ } 
+ .wrapper {
+  width: 80%;
+  height: 27vh;
+ }
+ .sliderBox {
+  width: 80%;
+  height: 26vh;
+  
+ }
+ .s-box {
+  border-radius: 8px;
+  width: 50%;
+  top: 85%;
+  left: 24%;
+ }
+ .s-box span {
+  font-size: 2rem;
+ }
+ .s-box p::before {
+  display: none;
+ }
+ .sliderContainer {
+  height: 3.3vh;
+ }
+
+ .sliderBox > div {
+  font-size: 5rem;
+  text-align: center;
+ }
+}
